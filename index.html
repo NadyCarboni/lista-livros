@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de livros</title>
+    
+    <style>
+    .success, .error {
+        color: white;
+        padding: 5px;
+        opacity: 0.4;
+        border-radius: 3px;
+        margin: 5px 0 15px 0;
+    } 
+
+    .success {
+        background-color: teal;
+    }
+    .error {
+        background-color: red;
+    }
+    </style>
+</head>
+
+<body>  
+    <h1>Lista de livros</h1>
+ <div class="container">
+   
+     <form id="book-form">
+        <div>
+            <label for="titulo">Título</label>
+            <input type="text" class="u-full-width" id="titulo">
+        </div>
+        <div>
+            <label for="autor">Autor</label>
+            <input type="text" class="u-full-width" id="autor">
+        </div>
+       
+        <div>
+            <label for="isbn">ISBN</label>
+            <input type="text" class="u-full-width" id="isbn">
+        </div>
+        <div>
+            <input type="submit" id="submit" value="Enviar" class="u-full-width">
+        </div>
+
+     </form>
+
+    
+     <table class="u-full-width">
+         <thead>
+             <tr>
+             <th>Titulo</th>
+             <th>Autor</th>
+             <th>ISBN</th>
+</tr>
+         </thead>
+         <tbody id="lista-livros">
+         
+
+         </tbody>
+     </table>
+ </div>
+
+<script src="appes6.js"></script>
+</body>
+</html>
